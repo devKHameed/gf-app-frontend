@@ -1,0 +1,1 @@
+type GmailAccounts=any;

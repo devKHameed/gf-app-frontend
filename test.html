@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pop Out Animation Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/konva@8.3.1/konva.min.js"></script>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      var stage = new Konva.Stage({
+        container: "container",
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+
+      var layer = new Konva.Layer();
+      stage.add(layer);
+
+      var circle = new Konva.Circle({
+        x: stage.width() / 2,
+        y: stage.height() / 2,
+        radius: 50,
+        fill: "blue",
+        opacity: 0,
+      });
+      layer.add(circle);
+      layer.draw();
+
+      var tween = new Konva.Tween({
+        node: circle,
+        duration: 1,
+        opacity: 1,
+        radius: 100,
+        easing: Konva.Easings.ElasticEaseOut,
+        onFinish: function () {
+          var tween2 = new Konva.Tween({
+            node: circle,
+            duration: 0.2,
+            radius: 90,
+            scaleX: 1.2,
+            scaleY: 1.2,
+            onFinish: function () {
+              var tween3 = new Konva.Tween({
+                node: circle,
+                duration: 0.2,
+                scaleX: 1,
+                scaleY: 1,
+              });
+              tween3.play();
+            },
+          });
+          tween2.play();
+        },
+      });
+      tween.play();
+    </script>
+  </body>
+</html>

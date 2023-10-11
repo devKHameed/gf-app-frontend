@@ -1,0 +1,68 @@
+.swal2-popup {
+  background-color: #19191a;
+  color: #e1e1e1;
+}
+
+.swal2-title {
+  color: #e1e1e1;
+}
+
+.swal2-content {
+  color: #e1e1e1;
+}
+
+.swal2-close {
+  color: #e1e1e1;
+}
+
+.swal2-icon {
+  color: #e1e1e1;
+}
+
+.swal2-actions {
+  border-top-color: #555;
+}
+
+.swal2-actions .swal2-confirm {
+  color: #e1e1e1;
+  background-color: #19191a;
+}
+
+.swal2-actions .swal2-cancel {
+  color: #e1e1e1;
+  background-color: #19191a;
+}
+
+.swal2-footer {
+  border-color: #555;
+  color: #c6c6c6;
+}
+
+.swal2-timer-progress-bar {
+  background-color: rgba(225, 225, 225, 0.6);
+}
+
+.swal2-input {
+  color: #e1e1e1;
+  background-color: #2c2c2d;
+}
+
+.swal2-validation-message {
+  background-color: #2c2c2d;
+  color: #e1e1e1;
+}
+
+.swal2-toast {
+  background-color: #19191a;
+}
+
+.swal2-toast-actions .swal2-confirm {
+  color: #e1e1e1;
+  background-color: #19191a;
+}
+
+.swal2-toast-close-button {
+  color: #e1e1e1;
+}
+
+/* Add any additional styles or overrides as needed */

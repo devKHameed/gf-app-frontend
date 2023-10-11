@@ -1,0 +1,199 @@
+[
+  {
+    "type": "boolean",
+    "label": "My Boolean",
+    "name": "myBoolean"
+  },
+  {
+    "type": "boolean",
+    "label": "My Boolean",
+    "name": "myBoolean2",
+    "required": true
+  },
+  {
+    "name": "select",
+    "label": "Size",
+    "type": "select",
+    "options": [
+      {
+        "label": "Small",
+        "value": "s"
+      },
+      {
+        "label": "Medium",
+        "value": "m"
+      },
+      {
+        "label": "Large",
+        "value": "l"
+      }
+    ]
+  },
+  {
+    "name": "select-grouped",
+    "label": "Size",
+    "type": "select",
+    "grouped": true,
+    "options": [
+      {
+        "label": "Men",
+        "options": [
+          {
+            "label": "Small",
+            "value": "ms"
+          },
+          {
+            "label": "Medium",
+            "value": "mm"
+          },
+          {
+            "label": "Large",
+            "value": "ml"
+          }
+        ]
+      },
+      {
+        "label": "Women",
+        "options": [
+          {
+            "label": "Small",
+            "value": "ws"
+          },
+          {
+            "label": "Medium",
+            "value": "wm"
+          },
+          {
+            "label": "Large",
+            "value": "wl"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "select-multiple",
+    "label": "Meal",
+    "type": "select",
+    "options": [
+      {
+        "label": "Breakfast",
+        "value": "breakfast"
+      },
+      {
+        "label": "Lunch",
+        "value": "lunch"
+      },
+      {
+        "label": "Dinner",
+        "value": "dinner"
+      }
+    ],
+    "multiple": true
+  },
+  {
+    "name": "select-p",
+    "type": "select",
+    "label": "Size",
+    "options": {
+      "store": [
+        {
+          "label": "Small",
+          "value": "s"
+        },
+        {
+          "label": "Medium",
+          "value": "m"
+        },
+        {
+          "label": "Large",
+          "value": "l"
+        }
+      ],
+      "placeholder": "Select your T-shirt size"
+    }
+  },
+  {
+    "name": "wholenumber",
+    "label": "Enter a whole number",
+    "type": "integer"
+  },
+  {
+    "name": "positivewholenumber",
+    "label": "Enter a positive whole number",
+    "type": "uinteger"
+  },
+  {
+    "name": "timezone",
+    "type": "timezone",
+    "label": "Timezone"
+  },
+  {
+    "label": "Timestamp",
+    "name": "timestamp",
+    "type": "timestamp"
+  },
+  {
+    "name": "contact",
+    "spec": [
+      {
+        "name": "firstname",
+        "type": "text",
+        "label": "First name"
+      },
+      {
+        "name": "lastname",
+        "type": "text",
+        "label": "Last name"
+      },
+      {
+        "name": "address",
+        "label": "Address",
+        "type": "collection",
+        "spec": [
+          {
+            "label": "Street",
+            "name": "street",
+            "type": "text"
+          },
+          {
+            "label": "City",
+            "name": "city",
+            "type": "text"
+          }
+        ]
+      }
+    ],
+    "type": "collection",
+    "label": "Contact"
+  },
+  {
+    "name": "tags",
+    "spec": {
+      "type": "text",
+      "label": "Tag"
+    },
+    "type": "array",
+    "label": "Tags"
+  },
+  {
+    "name": "contacts",
+    "spec": [
+      {
+        "name": "email",
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "label": "Name"
+      }
+    ],
+    "type": "array",
+    "label": "Contacts",
+    "labels": {
+      "add": "Add an item to my array"
+    }
+  }
+]
